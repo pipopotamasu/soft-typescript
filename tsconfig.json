@@ -1,32 +1,62 @@
 {
   "compilerOptions": {
+    // 1 コンパイルの対象にJSファイルも含める(npmパッケージ周りの検証をする)
     "allowJs": false,
-    "allowSyntheticDefaultImports": true,
+    // 2 export defaultを使用していないモジュールのコンパイル時にエラーを出力しない(要検証)
+    "allowSyntheticDefaultImports": false,
+    // 3 到達しないコードを許可する
     "allowUnreachableCode": false,
+    // 4 未使用のラベルを許可する(要検証)
     "allowUnusedLabels": false,
+    // 5 各出力ファイルにuse strictを記述する
     "alwaysStrict": true,
+    // モジュールを読み込むときのベースとなるパスを指定する。hoge/fuga/piyo.tsと会った時、baseUrlをhoge/fugaにしておけばpiyoだけで読み込める
     "baseUrl": ".",
+    // ようわからん、3系の新しい機能に関係するっぽい
     "build": false,
+    // 入力ファイルの文字コード
     "charset": "utf8",
+    // 6 jsファイルのエラーをチェック
     "checkJs": false,
-    "declaration": true,
+    // 7 TypeScriptで記述したファイルから型定義ファイルを生成
+    "declaration": false,
+    // declarationで生成されたファイルの出力先を設定
     // "declarationDir": "types",
+    // 8 型定義ファイルのソースマップを出力する(要検証)
     "declarationMap": false,
+    // 9 ビルド結果を表示する(要検証)
     "diagnostics": false,
+    // 10 JSのサイズ上限をdisabledにする
     "disableSizeLimit": false,
+    // 11 targetがES5, ES3のときfor ofのダウングレードをする(要検証)
     "downlevelIteration": false,
+    // 出力ファイルの先頭にBOMをつける
     "emitBOM": false,
-    "emitDeclarationOnly": false,    
+    // 型定義ファイルだけ出力する。型定義ファイルだけ欲しい時に使うのかな?
+    "emitDeclarationOnly": false,
+    // Decoratorのメタデータを出力する(要検証)
     "emitDecoratorMetadata": true,
+    // 出力ファイルのbabelと型システムとの互換性を保つ
     "esModuleInterop": false,
+    // 12 Decoratorを使えるようにする
     "experimentalDecorators": true,
+    // 13 ビルド結果を詳細に表示する(要検証)
     "extendedDiagnostics": false,
+    // 大文字と小文字を区別して参照を解決する。windowsだとファイルパスの大文字小文字を区別しないため、linuxとの整合性を保つためのオプション
     "forceConsistentCasingInFileNames": true,
+    // tslibをヘルパーとして使用するように設定する、ようわからん
     "importHelpers": false,
+    // 複数ソースマップが出力される場合、一つにまとめて出力する(認識間違ってるかも)
     "inlineSourceMap": false,
+    // jsファイルとソースマップを同じファイルで出力する
     "inlineSources": false,
+    // それぞれのファイルを分割モジュールとしてトランスパイルする。意味わからん
     "isolatedModules": false,
+    // jsx(.tsx)のサポート。
+    // preserve・・・babel等でさらに変換される前提でjsxのまま出力する.
+    // react・・・react用
     "jsx": "preserve",
+    // JSXファクトリーを指定する。React.createElement or h
     "jsxFactory": "React.createElement",
     "keyofStringsOnly": false,
     "lib": ["es2018", "dom"],
