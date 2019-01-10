@@ -25,7 +25,7 @@
     // 8 型定義ファイルのソースマップを出力する(要検証)
     "declarationMap": false,
     // 9 ビルド結果を表示する(要検証)
-    "diagnostics": false,
+    "diagnostics": true,
     // 10 JSのサイズ上限をdisabledにする
     "disableSizeLimit": false,
     // 11 targetがES5, ES3のときfor ofのダウングレードをする(要検証)
@@ -41,7 +41,7 @@
     // 12 Decoratorを使えるようにする
     "experimentalDecorators": true,
     // 13 ビルド結果を詳細に表示する(要検証)
-    "extendedDiagnostics": false,
+    "extendedDiagnostics": true,
     // 大文字と小文字を区別して参照を解決する。windowsだとファイルパスの大文字小文字を区別しないため、linuxとの整合性を保つためのオプション
     "forceConsistentCasingInFileNames": true,
     // tslibをヘルパーとして使用するように設定する、ようわからん
@@ -57,7 +57,7 @@
     // react・・・react用
     "jsx": "preserve",
     // JSXファクトリーを指定する。React.createElement or h
-    "jsxFactory": "React.createElement",
+    // "jsxFactory": "React.createElement",
     "keyofStringsOnly": false,
     "lib": ["es2018", "dom"],
     "listEmittedFiles": false,
@@ -73,7 +73,7 @@
     "noEmitOnError": false,
     "noErrorTruncation": false,
     "noFallthroughCasesInSwitch": false,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitUseStrict": false,
@@ -90,7 +90,7 @@
     "preserveWatchOutput": false,
     "pretty": true,
     // "project": "path/to/tsconfig.json",
-    "reactNamespace": "React",
+    // "reactNamespace": "React",
     "removeComments": false,
     "resolveJsonModule": false,
     // "rootDir": "path/to/rootDir",

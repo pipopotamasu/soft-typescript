@@ -12,5 +12,8 @@
     "parcel-bundler": "^1.10.3",
     "tslint": "^5.12.0",
     "typescript": "^3.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }
