@@ -73,8 +73,11 @@
     "noEmitOnError": false,
     "noErrorTruncation": false,
     "noFallthroughCasesInSwitch": false,
+    // 暗黙のany型を許容しない
     "noImplicitAny": false,
+    // 関数内のすべての経路で、返り値の型があっているかをチェック
     "noImplicitReturns": true,
+    // thisに型を指定していない場合エラー
     "noImplicitThis": true,
     "noImplicitUseStrict": false,
     "noLib": false,
