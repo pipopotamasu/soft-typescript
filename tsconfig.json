@@ -55,13 +55,17 @@
     // jsx(.tsx)のサポート。
     // preserve・・・babel等でさらに変換される前提でjsxのまま出力する.
     // react・・・react用
-    "jsx": "preserve",
+    // "jsx": "preserve",
     // JSXファクトリーを指定する。React.createElement or h
     // "jsxFactory": "React.createElement",
     "keyofStringsOnly": false,
+    // プロジェクトに含めるAPI(というより機能・文法)を指定。トランスパイルしてくれるようになる。
     "lib": ["es2018", "dom"],
+    // 生成されたファイル名を出力する
     "listEmittedFiles": false,
+    // コンパイルしたファイル名を出力する
     "listFiles": false,
+    // エラーメッセージの言語
     "locale": "en",
     // "mapRoot": "logs/type_error/maps",
     "maxNodeModuleJsDepth": 0,
