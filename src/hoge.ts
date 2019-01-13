@@ -1,3 +1,2 @@
-import "./fuga";
-const hoge: string = "hoge";
-console.log(hoge);
+import $ from 'jquery'
+console.log($);
