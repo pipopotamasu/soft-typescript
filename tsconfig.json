@@ -119,11 +119,17 @@
     "preserveWatchOutput": false,
     // エラーとメッセージの色装飾をしない
     "pretty": true,
+    // tsconfig.jsonの場所を指定する
     // "project": "path/to/tsconfig.json",
+    // reactはようわからん
     // "reactNamespace": "React",
+    // コメントを出力しない
     "removeComments": false,
+    // jsonをimportできるようにする
     "resolveJsonModule": false,
+    // ルートディレクトリの指定
     // "rootDir": "path/to/rootDir",
+    // ルートディレクトリの指定(複数)
     // "rootDirs": ["path/to/rootDir1", "path/to/rootDir2"],
     "showConfig": false,
     "skipDefaultLibCheck": false,
