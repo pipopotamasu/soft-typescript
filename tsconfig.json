@@ -131,22 +131,40 @@
     // "rootDir": "path/to/rootDir",
     // ルートディレクトリの指定(複数)
     // "rootDirs": ["path/to/rootDir1", "path/to/rootDir2"],
+    // コンパイルに使用した最終的なconfigを出力する
     "showConfig": false,
+    // デフォルトライブラリの型宣言ファイル(lib.d.ts)の型チェックをスキップする
     "skipDefaultLibCheck": false,
+    // 全てのライブラリの型宣言ファイルの型チェックをスキップする
     "skipLibCheck": false,
+    // ソースマップを出力する
     "sourceMap": true,
-    "sourceRoot": "path/to/sourceRoot",
+    // ソースマップを出力するパスを指定する
+    // "sourceRoot": "path/to/sourceRoot",
+    // strictBindCallApply, strictFunctionTypes, strictPropertyInitialization, strictNullChecksをtrueにする
     "strict": true,
-    "strictBindCallApply": false,
-    "strictFunctionTypes": false,
-    "strictPropertyInitialization": false,
-    "strictNullChecks": true,
+    // bind, call, applyのチェックを厳密にする
+    // "strictBindCallApply": true,
+    // 言葉で説明するのが難しい
+    // http://abcdef.gets.b6n.ch/entry/2017/11/01/101358
+    // "strictFunctionTypes": true,
+    // classのプロパティをconstructorで初期化しなければならない
+    // "strictPropertyInitialization": true,
+    // Nullチェックの厳密化
+    // "strictNullChecks": true,
+    // @internal JSDoc アノテーションがある場合に宣言を出力する
     "stripInternal": false,
+    // オブジェクトへの過剰なプロパティチェックを抑制する(どういうこっちゃ?)
     "suppressExcessPropertyErrors": false,
-    "suppressImplicitAnyIndexErrors": true,
+    // インデックスシグネチャが欠損したオブジェクトの noImplicitAny エラーを抑制する(どういうこっちゃ？)
+    "suppressImplicitAnyIndexErrors": false,
+    // 出力するECMASCRIPTのバージョン
     "target": "es5",
+    // モジュール解決のログメッセージを出力する
     "traceResolution": false,
+    // 型定義ファイルの場所の指定
     // "types": ["path/to/typeFile1", "path/to/typeFile2"],
+    // 型定義ファイルのdirを指定
     "typeRoots": ["path/to/typesDir1", "path/to/typesDir2"]
   },
   "exclude": [
