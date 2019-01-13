@@ -67,34 +67,57 @@
     "listFiles": false,
     // エラーメッセージの言語
     "locale": "en",
+    // マップファイルの場所を指定
     // "mapRoot": "logs/type_error/maps",
     "maxNodeModuleJsDepth": 0,
+    // モジュールの方式。commonjs, es6, amd etc...
     "module": "es6",
-    "moduleResolution": "node",
+    // モジュールの名前解決の方法。node or classic
+    // "moduleResolution": "classic",
+    // 改行コードの指定
     "newLine": "LF",
+    // コンパイルしたコードを出力しない。
     "noEmit": false,
+    // __extends のようなカスタムヘルパー関数を生成しない
     "noEmitHelpers": false,
+    // コンパイルエラーになった場合、エラーを出力しない
     "noEmitOnError": false,
+    // エラーメッセージを省略しない
     "noErrorTruncation": false,
-    "noFallthroughCasesInSwitch": false,
+    // switch 文のフォールスルー(breakを省略した書き方)に対してエラーを報告しない
+    "noFallthroughCasesInSwitch": true,
     // 暗黙のany型を許容しない
     "noImplicitAny": false,
     // 関数内のすべての経路で、返り値の型があっているかをチェック
     "noImplicitReturns": true,
     // thisに型を指定していない場合エラー
     "noImplicitThis": true,
+    // use strictを出力に含めない
     "noImplicitUseStrict": false,
+    // デフォルトの型定義ファイル(lib.d.ts)を使用しない。https://typescript-jp.gitbook.io/deep-dive/type-system/lib.d.ts
     "noLib": false,
+    // triple slash の参照や import 対象のモジュールを追加しない(つまり、依存解決しない)
+    // https://www.typescriptlang.org/docs/handbook/module-resolution.html
     "noResolve": false,
+    // Genericsの互換性チェックをしない
     "noStrictGenericChecks": false,
+    // 未使用のローカル変数があった時にエラーをだす。
     "noUnusedLocals": true,
+    // 未使用の引数があった時にエラーをだす。
     "noUnusedParameters": true,
+    // コンパイル後の出力ファイル先のdir
     // "outDir": "dist",
+    // コンパイル後の出力ファイル名
     // "outFile": "?",
+    // https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
     // "paths": {},
+    // コンパイル後の出力コードで、enumの宣言を消さない
     "preserveConstEnums": false,
+    // // モジュールの解決やキャッシュでシンボリックリンクの場所を基準にしない
     "preserveSymlinks": false,
+    // watchモードにおいてコンソールをclearしない
     "preserveWatchOutput": false,
+    // エラーとメッセージの色装飾をしない
     "pretty": true,
     // "project": "path/to/tsconfig.json",
     // "reactNamespace": "React",
