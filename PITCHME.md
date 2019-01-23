@@ -85,15 +85,15 @@
         - [こんなやつ](https://qiita.com/vvakame/items/d2c7cf142fa0af39d2d5#%E9%96%A2%E6%95%B0%E3%81%AE%E5%BC%95%E6%95%B0%E3%81%AE%E5%9E%8B%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%92%E5%BC%B7%E5%8C%96)らしい
         - おそらくこんなことは普段の開発ではほぼやらないと思うのでtrueでもいいや
 +++
-    - strictPropertyInitialization
-        - 定義済みのクラスのプロパティをコンストラクターで必ず初期化する
-        - これはtruenしておきたい
-    - strictNullChecks
-        - 厳格なNullチェック
-        - [こんなの] (https://qiita.com/IganinTea/items/f88bea469bff56cfbda6#--strictnullchecks)
-        - trueにしたい
+- strictPropertyInitialization
+    - 定義済みのクラスのプロパティをコンストラクターで必ず初期化する
+    - これはtrueしておきたい
+- strictNullChecks
+    - 厳格なNullチェック
+    - [こんなの](https://qiita.com/IganinTea/items/f88bea469bff56cfbda6#--strictnullchecks)
+    - trueにしたい
 +++
-- 結論、trueでいく
+** 結論、trueでいく **
 
 `strict: true`
 ---
