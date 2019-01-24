@@ -56,7 +56,16 @@
 
 ** @size[1.6em](noImplicitAny) **
 - 暗黙のany型を許容しない
-- 型定義ファイルのないライブラリの使用などおそらく一番ハマると思うのでdisabledにする
+- 例えば引数とかは何かしらの型宣言が必要になる
+
+```
+function(arg) { // Parameter 'arg' implicitly has an 'any' type.
+  ~~~~~~~~~~~
+}
+```
+
++++
+- 引数の宣言以外に何かあるっけ?
 
 `noImplicitAny: false`
 ---
