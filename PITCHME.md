@@ -66,8 +66,9 @@ function(arg) { // Parameter 'arg' implicitly has an 'any' type.
 
 +++
 - 引数の宣言以外に何かあるっけ?
+- 引数だけなら型宣言書いて欲しいのでtrue
 
-`noImplicitAny: false`
+`noImplicitAny: true`
 ---
 
 ** @size[1.6em](noImplicitReturns) **
