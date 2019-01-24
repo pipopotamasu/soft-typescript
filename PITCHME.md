@@ -5,9 +5,9 @@
 ## 自己紹介
 - 村上大和
     - twitter
-        - @pipopotamasu3
+        - [@pipopotamasu3](https://twitter.com/pipopotamasu3)
     - github
-        - pipopotamasu
+        - [pipopotamasu](https://github.com/pipopotamasu)
 - フロントエンドエンジニア
 - メドピアという会社にいます
 - 野球が趣味
