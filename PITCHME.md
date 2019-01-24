@@ -39,7 +39,7 @@
 
 ---
 
-** @size[2em](allowJs) **
+** @size[1.6em](allowJs) **
 - JSをコンパイル対象に含めるか
 - TypeScriptからの逃げ道を用意するためtrue
 - 逃げることは悪じゃない
@@ -47,40 +47,40 @@
 `allowJS: true`
 
 ---
-** checkJs **
+** @size[1.6em](checkJs) **
 - JSファイルのエラーをチェックする
 - JS許すのでtrue
 
 `checkJs: true`
 ---
 
-** noImplicitAny **
+** @size[1.6em](noImplicitAny) **
 - 暗黙のany型を許容しない
 - 型定義ファイルのないライブラリの使用などおそらく一番ハマると思うのでdisabledにする
 
 `noImplicitAny: false`
 ---
 
-** noImplicitReturns **
+** @size[1.6em](noImplicitReturns) **
 - 関数内のすべての経路で、返り値の型があっているかをチェック
 - このくらいは型は強制したい。そんなに難しくないのでtrue
 
 `noImplicitAny: true`
 ---
-** noImplicitThis **
+** @size[1.6em](noImplicitThis) **
 - thisに型を指定していない場合エラーを出す
 - thisもサーバーサイドエンジニアにとってはハマりそうな概念なのでfalse
 
 
 `noImplicitThis: false`
 ---
-** noStrictGenericChecks **
+** @size[1.6em](noStrictGenericChecks) **
 - function typesでのGenericsの厳格なチェックをしない
 - おそらくGenericsを使うということはTypeScriptをわかってきていると想像できるのでfalse
 
 `noStrictGenericChecks: false`
 ---
-** strict **
+** @size[1.6em](strict) **
 - 以下4つの集まり
     - strictBindCallApply
         - bind, call, applyの厳格なチェックをする
