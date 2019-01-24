@@ -39,7 +39,7 @@
 
 ---
 
-** allowJs **
+** @size[2em](allowJs) **
 - JSをコンパイル対象に含めるか
 - TypeScriptからの逃げ道を用意するためtrue
 - 逃げることは悪じゃない
