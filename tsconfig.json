@@ -87,7 +87,7 @@
     // switch 文のフォールスルー(breakを省略した書き方)に対してエラーを報告しない
     "noFallthroughCasesInSwitch": true,
     // 暗黙のany型を許容しない
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     // 関数内のすべての経路で、返り値の型があっているかをチェック
     "noImplicitReturns": true,
     // thisに型を指定していない場合エラー
