@@ -73,9 +73,19 @@ function(arg) { // Parameter 'arg' implicitly has an 'any' type.
 
 ** @size[1.6em](noImplicitReturns) **
 - 関数内のすべての経路で、返り値の型があっているかをチェック
+
+```
+function(arg: string) { // Not all code paths return a value.
+   if (arg === 'hoge') {
+     return 'return value';
+   }
+   // implicitly returns `undefined`
+}
+```
++++
 - このくらいは型は強制したい。そんなに難しくないのでtrue
 
-`noImplicitAny: true`
+`noImplicitReturns: true`
 ---
 ** @size[1.6em](noImplicitThis) **
 - thisに型を指定していない場合エラーを出す
