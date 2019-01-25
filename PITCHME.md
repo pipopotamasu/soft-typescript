@@ -134,7 +134,7 @@ function f(a: A, b: B) {
 ** @size[1.6em](strict) **
 - 以下4つの集まり
     - strictBindCallApply
-        - bind, call, applyの厳格なチェックをする
+        - bind, call, applyの引数の厳格なチェック
 +++
 
 ```
@@ -159,6 +159,8 @@ let d = foo.apply(undefined, [10, "hello"]);     // okay! returns a string
 - strictPropertyInitialization
     - 定義済みのクラスのプロパティをコンストラクターで必ず初期化する
     - これはtrueしておきたい
+    
++++
 - strictNullChecks
     - 厳格なNullチェック
 
