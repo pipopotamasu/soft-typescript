@@ -36,6 +36,7 @@
 
 ** ちゃんと書かないTypeScript設定 **
 - compiler optionsに着目して、JavaScriptからTypeScriptへの移行コストがかからない形を模索していく
+- TypeScriptビギナーなので間違っているところがあったら指摘していただけるとありがたいです(-人-)
 
 ---
 
@@ -138,4 +139,6 @@ sayName.bind(new Person())();
 ---
 ## 終わりに
 - compiler options膨大すぎて全て網羅できてないです、すみません汗
+- 結局きつめの型設定でも大丈夫そう？
+- 最悪anyで逃げるか...
 - 会社でTypeScript入れたことある人いたらこの辺の知見教えてください
