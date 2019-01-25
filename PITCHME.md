@@ -122,14 +122,13 @@ function f(a: A, b: B) {
     b = a;  // Ok
 }
 ```
+- type Aは引数の型は同じでなくても良い
+- type Bは引数の型は同じでなくてはならない
 
 +++
-- やべー意味わからん
-- 引き渡す型の数が関係するのか?
-- 誰か知っている人がいたら教えてください([このオプションがマージされた時のPR](https://github.com/Microsoft/TypeScript/pull/16368))
-- 理解できないでenabledするのは危険なのでtrueにしておく
+- 代入で型をゆるくしたくないのでfalse
 
-`noStrictGenericChecks: true`
+`noStrictGenericChecks: false`
 ---
 ** @size[1.6em](strict) **
 - 以下4つの集まり
