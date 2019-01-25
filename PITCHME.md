@@ -112,9 +112,24 @@ sayName.bind(new Person())();
 ---
 ** @size[1.6em](noStrictGenericChecks) **
 - function typesでのGenericsの厳格なチェックをしない
-- おそらくGenericsを使うということはTypeScriptをわかってきていると想像できるのでfalse
 
-`noStrictGenericChecks: false`
+```
+type A = <T, U>(x: T, y: U) => [T, U];
+type B = <S>(x: S, y: S) => [S, S];
+
+function f(a: A, b: B) {
+    a = b;  // Error
+    b = a;  // Ok
+}
+```
+
++++
+- やべー意味わからん
+- 引き渡す型の数が関係するのか?
+- 誰か知っている人がいたら教えてください((このオプションがマージされた時のPR)[https://github.com/Microsoft/TypeScript/pull/16368])
+- 理解できないでenabledするのは危険なのでtrueにしておく
+
+`noStrictGenericChecks: true`
 ---
 ** @size[1.6em](strict) **
 - 以下4つの集まり
