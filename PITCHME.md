@@ -126,7 +126,7 @@ function f(a: A, b: B) {
 +++
 - やべー意味わからん
 - 引き渡す型の数が関係するのか?
-- 誰か知っている人がいたら教えてください((このオプションがマージされた時のPR)[https://github.com/Microsoft/TypeScript/pull/16368])
+- 誰か知っている人がいたら教えてください([このオプションがマージされた時のPR](https://github.com/Microsoft/TypeScript/pull/16368))
 - 理解できないでenabledするのは危険なのでtrueにしておく
 
 `noStrictGenericChecks: true`
