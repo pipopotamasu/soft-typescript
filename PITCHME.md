@@ -89,10 +89,25 @@ function(arg: string) { // Not all code paths return a value.
 ---
 ** @size[1.6em](noImplicitThis) **
 - thisに型を指定していない場合エラーを出す
-- thisもサーバーサイドエンジニアにとってはハマりそうな概念なのでfalse
 
+```
+class Person {
+  name = 'Tom';
+}
 
-`noImplicitThis: false`
+function sayName() { // 明示的に引数にthis: Personと指定する必要あり
+  console.log(this.name); // 'this' implicitly has type 'any' because it does not have a type annotation.
+}
+
+sayName.bind(new Person())();
+```
+
++++
+
+- bind / call / applyのようにthisのコンテキスト変えるようなことをしなければ大丈夫?
+- 凝ったbind / call / apply使えるくらいならtrueでも大丈夫そう
+
+`noImplicitThis: true`
 ---
 ** @size[1.6em](noStrictGenericChecks) **
 - function typesでのGenericsの厳格なチェックをしない
